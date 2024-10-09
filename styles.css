@@ -1,0 +1,201 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #28074a, #491088);
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+/* Header */
+header h1 {
+    font-size: 2rem;
+    color: #ff7f1a;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Styles */
+section {
+    background: linear-gradient(135deg, #6c1dd0, #491088);
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Section Titles */
+section h2 {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 15px;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Toggle Switch for Lighting */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin: 10px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #491088;
+    transition: .4s;
+    border-radius: 34px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #ff19db;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+/* Button Styles */
+button {
+    background: #bd4de5;
+    border: none;
+    padding: 12px 20px;
+    margin: 10px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+button:hover {
+    background: #ff19db;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Temperature Paragraph */
+#current-temp {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #ff7f1a;
+    text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 1.8rem;
+    }
+
+    section h2 {
+        font-size: 1.4rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px 15px;
+    }
+}
+/* Music Control Buttons */
+#music-control button {
+    background-color: #bd4de5;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    font-size: 1.2rem;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#music-control button:hover {
+    background: #ff19db;
+}
+
+/* Song Name Styling */
+#song-name {
+    margin-top: 15px;
+    font-size: 1.2rem;
+    color: #ff7f1a;
+    font-style: italic;
+}
+
+/* Ad container styling */
+#ad-container {
+    display: none;
+    background-color: #333;
+    padding: 10px;
+    margin-top: 10px;
+    color: white;
+    position: relative;
+    width: 300px;
+    border-radius: 5px;
+}
+
+/* Close ad button */
+#close-ad {
+    background-color: #ff7f1a;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border-radius: 3px;
+}
+
+#close-ad:hover {
+    background-color: #ff4a4a;
+}
+/* Clock Section */
+#clock {
+    background: linear-gradient(135deg, #6c1dd0, #491088);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+#london-time {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ff7f1a;
+}

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home Control</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Font Awesome for icons -->
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1><i class="fas fa-home"></i> Smart Home Control</h1>
+        <p>made by @sonpiaz</p>
+    </header>
+
+    <!-- Lighting Section -->
+    <section id="lighting-control">
+        <h2><i class="fas fa-lightbulb"></i> Lighting</h2>
+        <!-- Toggle Switch -->
+        <label class="switch">
+            <input type="checkbox" id="light-toggle">
+            <span class="slider"></span>
+        </label>
+    </section>
+
+    <!-- Temperature Section -->
+    <section id="temperature-control">
+        <h2><i class="fas fa-thermometer-half"></i> Temperature</h2>
+        <button id="temp-up"><i class="fas fa-arrow-up"></i></button>
+        <button id="temp-down"><i class="fas fa-arrow-down"></i></button>
+        <p id="current-temp">Current Temperature: 78°F</p>
+    </section>
+
+  <!-- Music Section -->
+<section id="music-control">
+    <h2><i class="fas fa-music"></i> Music</h2>
+    <button id="play-music"><i class="fas fa-play"></i> Play</button>
+    <button id="pause-music"><i class="fas fa-pause"></i> Pause</button>
+    <button id="stop-music"><i class="fas fa-stop"></i> Stop</button>
+    <button id="next-track"><i class="fas fa-forward"></i> Next Track</button>
+    <p id="song-name">Song: No music playing</p>
+    <iframe id="spotify-player" style="margin-top: 10px;" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+    <!-- Ad section -->
+    <div id="ad-container" style="display: none;">
+        <p>Listen to the full track and millions more on Spotify</p>
+        <button id="close-ad">X</button>
+    </div>
+</section>
+<!-- Clock Section -->
+<section id="clock">
+    <h2>London Time</h2>
+    <p id="london-time">Loading...</p>
+</section>
